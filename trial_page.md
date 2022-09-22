@@ -1,2 +1,0 @@
-# algoexplain
-Trial page
