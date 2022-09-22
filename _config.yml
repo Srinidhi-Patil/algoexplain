@@ -29,7 +29,7 @@ description: >-                        # used by seo meta and the atom feed
   A place where algorithm explanations meet perfection. AI and Machine Learning algorithms made easy.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: ''
+url: https://algoexplain.com
 
 github:
   username: github_username             # change to your github username
