@@ -1,120 +1,81 @@
 ---
 layout: page
-# All the Categories of posts
 ---
 
-{% include lang.html %}
+{{ content }}
 
-{% assign HEAD_PREFIX = "h_" %}
-{% assign LIST_PREFIX = "l_" %}
-
-{% assign group_index = 0 %}
-
-{% assign sort_categories = site.categories | sort %}
-
-{% for category in sort_categories %}
-  {% assign category_name = category | first %}
-  {% assign posts_of_category = category | last %}
-  {% assign first_post = posts_of_category | first %}
-
-  {% if category_name == first_post.categories[0] %}
-    {% assign sub_categories = "" | split: "" %}
-
-    {% for post in posts_of_category %}
-      {% assign second_category = post.categories[1] %}
-      {% if second_category %}
-        {% unless sub_categories contains second_category %}
-          {% assign sub_categories = sub_categories | push: second_category %}
-        {% endunless %}
-      {% endif %}
-    {% endfor %}
-
-    {% assign sub_categories = sub_categories | sort %}
-    {% assign sub_categories_size = sub_categories | size %}
-
-  <div class="card categories">
-    <!-- top-category -->
-    <div id="{{ HEAD_PREFIX }}{{ group_index }}"
-      class="card-header d-flex justify-content-between hide-border-bottom">
-      <span>
-        <i class="far fa-folder{% if sub_categories_size > 0 %}-open{% endif %} fa-fw"></i>
-
-        {% capture _category_url %}/categories/{{ category_name | slugify | url_encode }}/{% endcapture %}
-        <a href="{{ _category_url | relative_url }}" class="ml-1 mr-2">{{ category_name }}</a>
-
-        <!-- content count -->
-        {% assign top_posts_size = site.categories[category_name] | size %}
-        <span class="text-muted small font-weight-light">
-          {% if sub_categories_size > 0 %}
-            {{ sub_categories_size }}
-            {% if sub_categories_size > 1 %}
-              {{ site.data.locales[lang].categories.category_measure.plural
-                | default: site.data.locales[lang].categories.category_measure }}
-            {% else %}
-              {{ site.data.locales[lang].categories.category_measure.singular
-                | default: site.data.locales[lang].categories.category_measure }}
-            {% endif %},
-          {% endif %}
-
-          {{ top_posts_size }}
-
-          {% if top_posts_size > 1 %}
-            {{ site.data.locales[lang].categories.post_measure.plural
-              | default: site.data.locales[lang].categories.post_measure }}
-          {% else %}
-            {{ site.data.locales[lang].categories.post_measure.singular
-              | default: site.data.locales[lang].categories.post_measure }}
-          {% endif %}
-        </span>
-      </span>
-
-      <!-- arrow -->
-      {% if sub_categories_size > 0%}
-      <a href="#{{ LIST_PREFIX }}{{ group_index }}" data-toggle="collapse"
-        aria-expanded="true" aria-label="{{ HEAD_PREFIX }}{{ group_index }}-trigger"
-        class="category-trigger hide-border-bottom">
-        <i class="fas fa-fw fa-angle-down"></i>
-      </a>
-      {% else %}
-      <span data-toggle="collapse" class="category-trigger hide-border-bottom disabled">
-        <i class="fas fa-fw fa-angle-right"></i>
-      </span>
-      {% endif %}
-
-    </div> <!-- .card-header -->
-
-    <!-- Sub-categories -->
-    {% if sub_categories_size > 0 %}
-    <div id="{{ LIST_PREFIX }}{{ group_index }}" class="collapse show" aria-expanded="true">
-      <ul class="list-group">
-        {% for sub_category in sub_categories %}
-        <li class="list-group-item">
-          <i class="far fa-folder fa-fw"></i>
-
-          {% capture _sub_ctg_url %}/categories/{{ sub_category | slugify | url_encode }}/{% endcapture %}
-          <a href="{{ _sub_ctg_url | relative_url }}" class="ml-1 mr-2">{{ sub_category }}</a>
-
-          {% assign posts_size = site.categories[sub_category] | size %}
-          <span class="text-muted small font-weight-light">
-            {{ posts_size }}
-
-            {% if posts_size > 1 %}
-              {{ site.data.locales[lang].categories.post_measure.plural
-                | default: site.data.locales[lang].categories.post_measure }}
-            {% else %}
-              {{ site.data.locales[lang].categories.post_measure.singular
-                | default: site.data.locales[lang].categories.post_measure }}
-            {% endif %}
-          </span>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-    {% endif %}
-
-  </div> <!-- .card -->
-
-    {% assign group_index = group_index | plus: 1 %}
-
+{% assign categories_max = 0 %}
+{% for category in site.categories %}
+  {% if category[1].size > categories_max %}
+    {% assign categories_max = category[1].size %}
   {% endif %}
+{% endfor %}
+
+{% assign category_names_array = "" %}
+{% assign category_counts = "" %}
+{% assign first_array_element = true %}
+{% for i in (1..categories_max) reversed %}
+  {% assign category_names = "" %}
+  {% assign first_category = true %}
+
+  {% for category in site.categories %}
+    {% if category[1].size == i %}
+      {% if first_category %}
+        {% assign first_category = false %}
+      {% else %}
+        {% assign category_names = category_names | append: "," %}
+      {% endif %}
+      {% assign category_names = category_names | append: category[0] %}
+    {% endif %}
+  {% endfor %}
+
+  {% if category_names != "" %}
+    {% assign category_names = category_names | split: "," | sort | join: "," %}
+
+    {% if first_array_element %}
+      {% assign first_array_element = false %}
+    {% else %}
+      {% assign category_names_array = category_names_array | append: "|" %}
+      {% assign category_counts = category_counts | append: "|" %}
+    {% endif %}
+    {% assign category_names_array = category_names_array | append: category_names %}
+    {% assign category_counts = category_counts | append: i %}
+  {% endif %}
+{% endfor %}
+
+{% assign category_names_array = category_names_array | split: "|" %}
+{% assign category_counts = category_counts | split: "|" %}
+
+
+<ul class="taxonomy-index">
+  {% for category_names in category_names_array %}
+    {% assign category_names_list = category_names | split: "," %}
+    {% assign category_count = category_counts[forloop.index0] %}
+    {% for category_name in category_names_list %}
+      <li>
+        <a href="#{{ category_name | slugify }}">
+          <strong>{{ category_name }}</strong> <span class="taxonomy-count">{{ category_count }}</span>
+        </a>
+      </li>
+    {% endfor %}
+  {% endfor %}
+</ul>
+
+{% for category_names in category_names_array %}
+  {% assign category_names_list = category_names | split: "," %}
+  {% for category_name in category_names_list %}
+    <section id="{{ category_name | slugify | downcase }}" class="taxonomy-section">
+      <h2 class="taxonomy-title">{{ category_name }}</h2>
+      {% for category in site.categories %}
+        {% if category[0] == category_name %}
+          <div class="entries-{{ page.entries_layout | default: 'list' }}">
+            {% for entry in category.last %}
+              {% include entry.html %}
+            {% endfor %}
+          </div>
+        {% endif %}
+      {% endfor %}
+      <a href="#page-title" class="back-to-top">{{ site.data.text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+    </section>
+  {% endfor %}
 {% endfor %}

@@ -1,23 +1,41 @@
 {
-  "name": "jekyll-theme-chirpy",
-  "version": "5.2.1",
-  "description": "A minimal, responsive, and powerful Jekyll theme for presenting professional writing.",
+  "name": "jekyll-theme-so-simple",
+  "description": "A simple Jekyll theme for words and pictures.",
+  "version": "3.2.0",
+  "author": "Michael Rose",
+  "homepage": "http://mmistakes.github.io/so-simple-theme/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cotes2020/jekyll-theme-chirpy.git"
+    "url": "git://github.com/mmistakes/so-simple-theme.git"
   },
-  "author": "Cotes Chung",
-  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cotes2020/jekyll-theme-chirpy/issues"
+    "url": "https://github.com/mmistakes/so-simple-theme/issues"
   },
-  "homepage": "https://github.com/cotes2020/jekyll-theme-chirpy#readme",
+  "keywords": [
+    "jekyll",
+    "theme",
+    "minimal",
+    "responsive"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-insert": "^0.5.0",
-    "gulp-rename": "^2.0.0",
-    "gulp-uglify": "^3.0.2",
-    "uglify-js": "^3.14.3"
-  }
+    "npm-run-all": "^4.1.5",
+    "onchange": "^6.1.1",
+    "uglify-js": "^3.13.6"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 5%",
+    "IE 9"
+  ],
+  "scripts": {
+    "uglify": "uglifyjs assets/js/plugins/lity.js assets/js/plugins/jquery.smooth-scroll.js assets/js/plugins/table-of-contents.js assets/js/main.js -c -m -o assets/js/main.min.js",
+    "add-banner": "node banner.js",
+    "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
+    "build:js": "npm run uglify && npm run add-banner"
+  },
+  "dependencies": {}
 }
