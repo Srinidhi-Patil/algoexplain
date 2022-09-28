@@ -101,13 +101,13 @@ author:
       icon: fas fa-rss-square
     - title: Github
       url: https://github.com/Srinidhi-Patil
-      icon: fas fa-github-square
+      icon: fab fa-github-square
 
 # Footer Links
 footer_links:
   - title: Feed
-    url: atom.xml
+    url: 
     icon: fas fa-rss-square
   - title: Github
-    url: atom.xml
-    icon: fas fa-github-square
+    url: https://github.com/Srinidhi-Patil
+    icon: fab fa-github-square
