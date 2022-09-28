@@ -18,7 +18,7 @@ remote_theme: mmistakes/so-simple-theme
 skin: "/assets/css/skins/default.css"
 locale: en-US
 title: "AlgoExplain"
-description: "A technical blog on algorithms, machine learning, technology and more"
+description: "A blog on algorithms, machine learning, technology and more"
 baseurl:  # the subpath of your site, e.g. "/blog"
 url: "https://algoexplain.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 logo: "/images/logo.png" # path of site logo, e.g. "/images/logo.png"
@@ -96,15 +96,18 @@ author:
   email: srinidhipatil19@gmail.com
   twitter: srinidhipatil8
   links:
-    - title: Senior Data Scientist
+    - title: URL
       url: https://algoexplain.com
-      icon:
+      icon: fas fa-rss-square
+    - title: Github
+      url: https://github.com/Srinidhi-Patil
+      icon: fas fa-github-square
 
 # Footer Links
 footer_links:
   - title: Feed
     url: atom.xml
     icon: fas fa-rss-square
-  - title: Feed
+  - title: Github
     url: atom.xml
-    icon: fas fa-rss-square
+    icon: fas fa-github-square
