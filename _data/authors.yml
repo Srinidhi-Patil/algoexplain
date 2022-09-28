@@ -1,16 +1,16 @@
 # Sample Authors
 # Remove file or replace with your own
 
-Billy Rick:
-  name: Billy Rick
+Srinidhi Patil:
+  name: Srinidhi Patil
   picture: /images/bio-photo-2.jpg
-  twitter: "@billyrick"
+  twitter: "@srinidhipatil8"
   links:
     - title: Twitter
-      url: https://twitter.com/billyrick
+      url: https://twitter.com/srinidhipatil8
       icon: fab fa-twitter-square
 
-Cornelius Fiddlebone:
-  name: Cornelius Fiddlebone
+Ashwini Kanitkar:
+  name: Ashwini Kanitkar
   picture: /images/bio-photo.jpg
-  twitter: corneliusfiddlebone
+  twitter: "ashwinikanitkar"

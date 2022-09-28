@@ -1,6 +1,7 @@
 ---
 title: "Markup: HTML Elements and Formatting"
 sub_title: "The common elements"
+author: Ashwini Kanitkar
 categories:
   - Markup
 elements:
