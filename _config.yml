@@ -99,15 +99,15 @@ author:
     - title: URL
       url: https://algoexplain.com
       icon: fas fa-rss-square
-    - title: Github
+    - title: GitHub
       url: https://github.com/Srinidhi-Patil
       icon: fab fa-github-square
 
 # Footer Links
 footer_links:
-  - title: Feed
+  - title: Contact Me
     url: 
     icon: fas fa-rss-square
-  - title: Github
+  - title: GitHub
     url: https://github.com/Srinidhi-Patil
-    icon: fab fa-github-square
+    icon: fab fa-github
