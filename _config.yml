@@ -92,7 +92,7 @@ defaults:
 # Site Author
 author: 
   name: Srinidhi Patil
-  picture: /images/author_srinidhi_patil.png
+  picture: "/images/author_srinidhi_patil.png"
   email: srinidhipatil19@gmail.com
   twitter: srinidhipatil8
   links:
