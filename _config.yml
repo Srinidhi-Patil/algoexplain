@@ -115,5 +115,5 @@ footer_links:
     url: https://github.com/Srinidhi-Patil
     icon: fab fa-github
   - title: LinkedIn
-      url: https://linkedin.com/in/srinidhipatil19
+      url: "https://linkedin.com/in/srinidhipatil19"
       icon: fab fa-linkedin
