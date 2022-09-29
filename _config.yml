@@ -92,22 +92,28 @@ defaults:
 # Site Author
 author: 
   name: Srinidhi Patil
-  picture:
+  picture: /images/author_srinidhi_patil.png
   email: srinidhipatil19@gmail.com
   twitter: srinidhipatil8
   links:
-    - title: URL
-      url: https://algoexplain.com
-      icon: fas fa-rss
     - title: GitHub
       url: https://github.com/Srinidhi-Patil
       icon: fab fa-github
+    - title: LinkedIn
+      url: https://linkedin.com/in/srinidhipatil19
+      icon: fab fa-linkedin
+    - title: Email
+      url: srinidhipatil19@gmail.com
+      icon: fab fa-email
 
 # Footer Links
 footer_links:
   - title: Contact Me
-    url: 
-    icon: fas fa-rss
+    url: srinidhipatil19@gmail.com
+    icon: fab fa-email
   - title: GitHub
     url: https://github.com/Srinidhi-Patil
     icon: fab fa-github
+  - title: LinkedIn
+      url: https://linkedin.com/in/srinidhipatil19
+      icon: fab fa-linkedin
