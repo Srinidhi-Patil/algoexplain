@@ -103,13 +103,13 @@ author:
       url: https://linkedin.com/in/srinidhipatil19
       icon: fab fa-linkedin
     - title: Email
-      url: srinidhipatil19@gmail.com
+      url: mailto:srinidhipatil19@gmail.com
       icon: fab fa-email
 
 # Footer Links
 footer_links:
   - title: Contact Me
-    url: srinidhipatil19@gmail.com
+    url: mailto:srinidhipatil19@gmail.com
     icon: fab fa-email
   - title: GitHub
     url: https://github.com/Srinidhi-Patil
