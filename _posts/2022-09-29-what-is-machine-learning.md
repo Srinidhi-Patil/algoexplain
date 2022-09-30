@@ -10,12 +10,14 @@ tags:
 ---
 
 ## What is Machine Learning? An Introduction
+
+We all have heard the terminology and a lot of us may even have a brief idea of what machine learning is. In this article, we will try to know the overview of Machine Learning which will help aspiring Data Scientists and enthusiasts to get a kickstart in machine learning. 
+
 > Field of study that gives computers the ability to learn without being explicitly programmed.
 >
 > <footer><strong>Arthur Samuel</strong></footer>
 
-We all have heard the terminology and a lot of us may even have a brief idea of what machine learning is. In this article, we will try to know the overview of Machine Learning which will help aspiring Data Scientists and enthusiasts to get a kickstart in machine learning. 
-In simple words, machine learning is the way to teach computers to take their own decisions without having to program for each case. There are different machine learning techniques and algorithms that help achieve this. We will talk about some of them in the later part of this article. Lets us say you have a dataset of the stock market performance of a specific company, if you have to write conditions or cases to predict the stock price based on available parameters then it would not be possible. This is where machine learning is effective. You can feed the data to machine learning algorithms and make predictions for every case in your dataset. That is the power of machine learning. 
+In simple words, machine learning is the way to teach computers to take their own decisions without having to program for each case. There are different machine learning techniques and algorithms that help achieve this. We will talk about some of them in the later part of this article. Let us say you have a dataset of the stock market performance of a specific company, if you have to write conditions or cases to predict the stock price based on available parameters then it would not be possible. This is where machine learning is effective. You can feed the data to machine learning algorithms and make predictions for every case in your dataset. That is the power of machine learning. 
 
 ## Why is machine learning taking the center stage?
 Machine learning helps businesses simplify, save time, and money and at the same time be effective in their solutions internal or external to their organization. Let me present you with some facts and information points that will help you understand the importance of machine learning in the business setup.   
@@ -42,4 +44,4 @@ Algorithms have to be interpretable and explainable. While a lot of machine lear
 Machine learning is gaining momentum in recent times as a result of which it is difficult to find the people with relevant skills in the domain. Finding the best talent in machine learning has become on of the demanding tasks. It takes up a long time to put together the best team of people who can work on the machine learning tasks. The process of finding the best talent and putting together a team in achieving the end goal consumes the larger part of time. It also increase the time taken on the ROI for the businesses in a big way. 
 
 ## Conclusion
-Machine learning as a new technology opens up a wide range of opportunities for businesses and people alike. It has also proven to be the future of how data can be used to solve complex problems that will have an impact. Besing a new field it comes with its own set of problems in adoption for businesses. As we go further the new research will help in addressing the challenges in machine learning. I hope this article will help in getting overview on machine learning to those who are new to the field. For more such articles on technology you can always refer to algoexplain.com. Happy reading!  
+Machine learning as a new technology opens up a wide range of opportunities for businesses and people alike. It has also proven to be the future of how data can be used to solve complex problems that will have an impact. Besing a new field it comes with its own set of problems in adoption for businesses. As we go further the new research will help in addressing the challenges in machine learning. I hope this article will help in getting overview on machine learning to those who are new to the field. For more such articles on technology you can always refer to [algoexplain](https://www.algoexplain.com "AlgoExplain"). Happy reading!  
