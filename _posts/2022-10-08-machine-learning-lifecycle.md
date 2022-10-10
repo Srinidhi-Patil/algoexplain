@@ -49,6 +49,7 @@ Exploratory Data Analysis(EDA) is a process of understanding the data through pa
 
 #### Feature Engineering 
 Feature engineering comprises steps in which existing data is extrapolated and new more valuable features are created. Let us look at a simple example, we have a dataset of customers of a retail company and want to build a Customer Segmentation model. We have “Date of birth” as one of the columns, it may not mean anything to the model if it is used as it is. We can extrapolate “Date of birth” into a new column called “Age”. “Age” becomes an important feature in the Customer Segmentation that we will build. 
+
 Feature Engineering can be done through a simple data extrapolation or data transformation through a statistical/mathematical function. Examples of feature engineering through statistical functions are Scaling, Normalization, Standardization, and custom functions. 
 
 #### Feature Selection
@@ -72,7 +73,9 @@ The data has to be split into “Train” and “Test” subsets. The Train set 
 
 #### Selecting the libraries
 The models can be built from scratch by the developer but it takes a considerable amount of time. There are a few well-known Python libraries such as Scikit Learn, Statsmodels, etc. which can be used to build the model.
-“Model building” is also referred to as “Fitting the model”. 
+
+#### Fitting the model
+Fitting the model involves submitting the training data, independent variables, dependent variables, and hyperparameters to the model class.
 
 ## Model Validation
 The process of evaluation and verification of the model for its fit is called model validation. Model validation highlights the shortcomings of the model and allows ML engineers to refine/tune the models to overcome those shortcomings. Let us look at the processes involved in model validation.
@@ -89,6 +92,7 @@ When the model makes a prediction, it should be explainable as to why the model 
 
 ## Model Deployment
 The models developed can be deployed and used in various ways, the easiest being on the web as API, container deployment, or exporting the parameters. There are a host of options available for model deployment, for example, MLBox, AWS Sagemaker, and RapidMiner. 
+
 The area of model deployment and operations is called Machine Learning Operations(MLOps) which is similar to the Development Operations(DevOps) in the software development lifecycle.
 
 ## Monitoring and Improvement
