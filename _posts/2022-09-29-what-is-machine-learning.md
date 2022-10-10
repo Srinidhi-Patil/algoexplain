@@ -7,6 +7,7 @@ tags:
   - machine learning
   - data science
   - modeling
+  - srinidhi patil
 ---
 
 ## What is Machine Learning? An Introduction
@@ -44,4 +45,4 @@ Algorithms have to be interpretable and explainable. While a lot of machine lear
 Machine learning is gaining momentum in recent times as a result of which it is difficult to find the people with relevant skills in the domain. Finding the best talent in machine learning has become one of the demanding tasks. It takes up a long time to put together the best team of people who can work on machine learning tasks. The process of finding the best talent and putting together a team in achieving the end goal consumes the larger part of time. It also increases the time taken on the ROI for the businesses in a big way. 
 
 ## Conclusion
-Machine learning as a new technology opens up a wide range of opportunities for businesses and people alike. It has also proven to be the future of how data can be used to solve complex problems that will have an impact. Besing a new field it comes with its own set of problems in adoption for businesses. As we go further the new research will help in addressing the challenges in machine learning. I hope this article will help in getting an overview on machine learning to those who are new to the field. For more such articles on technology you can always refer to [algoexplain](https://www.algoexplain.com "AlgoExplain"). Happy reading!  
+Machine learning as a new technology opens up a wide range of opportunities for businesses and people alike. It has also proven to be the future of how data can be used to solve complex problems that will have an impact. Besing a new field it comes with its own set of problems in adoption for businesses. As we go further the new research will help in addressing the challenges in machine learning. I hope this article will help in getting an overview on machine learning to those who are new to the field. For more such articles on technology you can always refer to [algoexplain](https://algoexplain.com/ "AlgoExplain"). Happy reading!  
