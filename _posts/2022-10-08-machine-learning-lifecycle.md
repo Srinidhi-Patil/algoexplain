@@ -27,6 +27,7 @@ Every process in software engineering involves a certain number of steps or proc
 5. Model Building
    * Splitting the data
    * Selecting the libraries
+   * Fitting the model
 6. Model Validation
    * Model Testing
    * Hyperparameter Tuning
@@ -36,6 +37,7 @@ Every process in software engineering involves a certain number of steps or proc
 
 ## Data Collection
 The data for your project may not be readily available, you will have to define the type, parameters, and structure of the data. Data can be collected from reliable sources or generated through a defined process. Generating the data may involve a manual or an automated process. Data collection has to be done carefully to ensure that society's bias does not propagate to the data and the model. 
+
 The data may be structured(CSV, sheets, databases) or unstructured(images, audio, text files). 
 
 ## Data Preprocessing
@@ -49,6 +51,7 @@ Exploratory Data Analysis(EDA) is a process of understanding the data through pa
 
 #### Feature Engineering 
 Feature engineering comprises steps in which existing data is extrapolated and new more valuable features are created. Let us look at a simple example, we have a dataset of customers of a retail company and want to build a Customer Segmentation model. We have “Date of birth” as one of the columns, it may not mean anything to the model if it is used as it is. We can extrapolate “Date of birth” into a new column called “Age”. “Age” becomes an important feature in the Customer Segmentation that we will build. 
+
 Feature Engineering can be done through a simple data extrapolation or data transformation through a statistical/mathematical function. Examples of feature engineering through statistical functions are Scaling, Normalization, Standardization, and custom functions. 
 
 #### Feature Selection
@@ -81,6 +84,7 @@ The process of evaluation and verification of the model for its fit is called mo
 
 #### Model Testing
 Testing the model with the Test set will just provide us with the metrics of the model but not the exact behavior of the model. The model has to be tested in an overall manner to verify that there is no Overfitting(a scenario where the model only learns and predicts the Train set appropriately and performs badly on encountering the new records) or Underfitting(a scenario where the model does not fit the data well enough) of the model with the training data.
+
 The model has to be run through a series of validation tests with techniques such as Cross Validation, Invariance test, Directional Expectation test, and A/B test to ensure the model is the best fit overall. 
 
 #### Hyperparameter Tuning
@@ -88,7 +92,8 @@ Model testing lets us know the shortcomings of the model or if the model has to 
 
 #### Interpretability and Explainability
 When the model makes a prediction, it should be explainable as to why the model made that prediction and the reasoning behind it. The models can not be trusted just on the basis of accuracy or other metrics as the model may be behaving in a certain way because of any reason. The rationale behind model interpretability is to increase the trust in the model,  have a transparent understanding of why the model is making the decisions a particular way, and features that contribute positively or negatively towards the dependent variable.
-There has been progress in building algorithms or mathematical approaches that make interpretability easier but there are no major breakthroughs that make it a rapidly growing area of research. LIME, SHAP, AIF360. Fairlearn and ELI5 are some of the libraries that help make sense of the model learning and results.    
+
+There has been progress in building algorithms or mathematical approaches that make interpretability easier but there are no significant breakthroughs that make it a rapidly growing area of research. LIME, SHAP, AIF360. Fairlearn and ELI5 are some of the libraries that help make sense of the model learning and results.    
 
 ## Model Deployment
 The models developed can be deployed and used in various ways, the easiest being on the web as API, container deployment, or exporting the parameters. There are a host of options available for model deployment, for example, MLBox, AWS Sagemaker, and RapidMiner. 
