@@ -1,5 +1,5 @@
 ---
-title: "Machine Learning: An overview"
+title: "Machine Learning: An Overview"
 author: Srinidhi Patil
 categories:
   - machine learning
@@ -9,8 +9,6 @@ tags:
   - modeling
   - srinidhi patil
 ---
-
-## What is Machine Learning? An Introduction
 
 We all have heard the terminology and a lot of us may even have a brief idea of what machine learning is. In this article, we will try to know the overview of Machine Learning which will help aspiring Data Scientists and enthusiasts to get a kickstart in machine learning. 
 

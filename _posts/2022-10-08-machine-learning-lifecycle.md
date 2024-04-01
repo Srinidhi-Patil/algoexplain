@@ -11,9 +11,7 @@ tags:
   - srinidhi patil
 ---
 
-
-## What is a machine learning lifecycle?
-Every process in software engineering involves a certain number of steps or procedures to be followed in a certain order sometimes, recursively. These steps are usually referred to as the Software Engineering lifecycle. Software Engineering lifecycle steps are part of any software development process. Just as in the software engineering lifecycle, when building a machine learning product or a service machine learning engineers and data scientists follow a set of steps and processes collectively part of what is referred to as a Machine Learning lifecycle. The Machine Learning life cycle comprises steps from data collection, and model building to monitoring the deployed model performance. We will see the steps in a machine learning lifecycle in detail in this article.
+Every process in software engineering involves a certain number of steps or procedures to be followed in a certain order sometimes, recursively. These steps are usually referred to as the Software Engineering lifecycle. Software Engineering lifecycle steps are part of any software development process. Just as in the software engineering lifecycle, when building a machine learning product or a service machine learning engineers and data scientists follow a set of steps and processes collectively part of what is referred to as a Machine Learning lifecycle. The Machine Learning lifecycle comprises steps from data collection, and model building to monitoring the deployed model performance. We will see the steps in a machine learning lifecycle in detail in this article.
 
 ## Steps in a machine learning lifecycle
 1. Data Collection
@@ -55,7 +53,7 @@ Feature engineering comprises steps in which existing data is extrapolated and n
 Feature Engineering can be done through a simple data extrapolation or data transformation through a statistical/mathematical function. Examples of feature engineering through statistical functions are Scaling, Normalization, Standardization, and custom functions. 
 
 #### Feature Selection
-Feature selection is the process of selecting the right variables for the model. Using all the features in the data may cause a few issues in the model such as an unnecessary hike in accuracy, increased computation, and time for building the model. Hence, it becomes necessary to select and retain the right variables while building a model. Feature selection can be done in many ways but commonly it is done using Backward Elimination, Forward Selection, Recursive feature Elimination(RFE), or Filter methods. The technique used for feature selection will be largely based on the problem being solved(like Regression of Classification) and also on the input variables. Assumption checks also play a role in feature selection, we will study it in the next section.
+Feature selection is the process of selecting the right variables for the model. Using all the features in the data may cause a few issues in the model such as an unnecessary hike in accuracy, increased computation, and time for building the model. Hence, it becomes necessary to select and retain the right variables while building a model. Feature selection can be done in many ways but commonly it is done using Backward Elimination, Forward Selection, Recursive Feature Elimination(RFE), or Filter methods. The technique used for feature selection will be largely based on the problem being solved(like Regression of Classification) and also on the input variables. Assumption checks also play a role in feature selection, we will study it in the next section.
 
 ## Assumption Checks
 Almost every machine learning algorithm has its own set of assumptions that have to be proved before building a model or by recursively building the model. For example, linear regression assumes:
