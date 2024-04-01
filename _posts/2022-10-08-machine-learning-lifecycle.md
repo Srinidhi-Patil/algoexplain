@@ -102,4 +102,4 @@ The area of model deployment and operations is called Machine Learning Operation
 The model has to be monitored often to keep it relevant and avoid model degradation. Models require improvements to ensure that they are always updated against problems such as data drift and concept drift. For example, the data relevant to predict house prices in the 1990s will not be relevant during the 2008 crisis and the data collected during the 2008 crisis will not be relevant today.   
 
 ## Conclusion
-The Machine Learning lifecycle is a cyclical process that is followed in the ML model or ML-related software development. In this article, we have studied the brief of each process in the ML lifecycle. I hope this article was helpful please keep following algoexpplain for more such articles.
+The Machine Learning lifecycle is a cyclical process that is followed in the ML model or ML-related software development. In this article, we have studied the brief of each process in the ML lifecycle. I hope this article was helpful, please keep following [algoexplain](https://algoexplain.com/) for more such articles.
